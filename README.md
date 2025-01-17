@@ -1,4 +1,4 @@
-These Silkann templates are built using Bootstrap v5.
+The Silkann templates are built using Bootstrap v5. For support, please email matt.d@courtsdesign.com.
 
 ## Installation
 
