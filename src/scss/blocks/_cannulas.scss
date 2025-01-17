@@ -1,0 +1,75 @@
+@use 'bootstrap/scss/bootstrap' as *;
+@use '../global/variables';
+
+#cannulas {
+  padding-left: 0;
+  padding-right: 0;
+
+  .container-lg {
+    --bs-gutter-x: 0;
+  }
+
+  .cannulas {
+    text-align: center;
+    margin: 4rem 0 2rem 0;
+
+    .cannula-img {
+      margin-bottom: 1rem;
+      position: relative;
+
+      &.tip img {
+        padding-left: 5%;
+      }
+
+      &.end img {
+        padding-right: 5%;
+      }
+
+      &.end.silkann {
+        margin-top: 2rem;
+
+        @include media-breakpoint-up(md) {
+          margin-top: 0;
+        }
+      }
+
+      .tooltip-frame {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        border-radius: 20px;
+        transition-duration: 0.4s;
+        transition-timing-function: ease-in-out;
+        border: 4px solid transparent;
+
+        &:hover {
+          border-color: variables.$mint;
+        }
+
+        &.silkann-tip {
+          left: 18%;
+          width: 22.5%;
+        }
+
+        &.tip {
+          left: 18%;
+          width: 15.8%;
+        }
+
+        &.silkann-end {
+          left: 5.5%;
+          width: 41.5%;
+        }
+
+        &.end {
+          left: 5.5%;
+          width: 41.5%;
+        }
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

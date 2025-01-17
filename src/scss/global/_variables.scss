@@ -1,0 +1,49 @@
+$primary: #000;
+$periwinkle: #c9c9ff;
+$blush: #ffd9de;
+$rose: #f7b8bd;
+$lemon: #ffe099;
+$mandarin: #ffb88a;
+$mint: #bafae0;
+$blue: #b5edff;
+$white: #fff;
+
+$theme-colors: (
+  'primary': $primary,
+  'periwinkle': $periwinkle,
+  'blush': $blush,
+  'rose': $rose,
+  'lemon': $lemon,
+  'mandarin': $mandarin,
+  'mint': $mint,
+  'blue': $blue,
+  'white': $white,
+);
+
+.bg-periwinkle {
+  background-color: $periwinkle;
+}
+
+.bg-lemon {
+  background-color: $lemon;
+}
+
+.bg-mint {
+  background-color: $mint;
+}
+
+.bg-blush {
+  background-color: $blush;
+}
+
+.bg-rose {
+  background-color: $rose;
+}
+
+.bg-blue {
+  background-color: $blue;
+}
+
+.bg-white {
+  background-color: $white;
+}

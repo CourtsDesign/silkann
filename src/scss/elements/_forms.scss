@@ -1,0 +1,13 @@
+@use 'bootstrap/scss/bootstrap' as *;
+@use '../global/variables';
+
+form {
+  input:not([type='submit'], [type='checkbox']),
+  textarea {
+    width: 100%;
+    padding: 1rem !important;
+    margin: 0;
+    border: 2px solid variables.$blush !important;
+    border-radius: 1rem !important;
+  }
+}

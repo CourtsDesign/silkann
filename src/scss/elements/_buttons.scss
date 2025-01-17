@@ -1,0 +1,65 @@
+@use 'bootstrap/scss/bootstrap' as *;
+@use '../global/variables';
+
+.btn-periwinkle {
+  @extend .btn;
+  background-color: variables.$periwinkle;
+
+  &:hover {
+    background-color: darken(variables.$periwinkle, 5%);
+  }
+}
+
+.btn-rose {
+  @extend .btn;
+  background-color: variables.$rose;
+
+  &:hover {
+    background-color: darken(variables.$rose, 5%);
+  }
+}
+
+.btn-blush {
+  @extend .btn;
+  background-color: variables.$blush;
+
+  &:hover {
+    background-color: darken(variables.$blush, 5%);
+  }
+}
+
+.btn-lemon {
+  @extend .btn;
+  background-color: variables.$lemon;
+
+  &:hover {
+    background-color: darken(variables.$lemon, 5%);
+  }
+}
+
+.btn-mandarin {
+  @extend .btn;
+  background-color: variables.$mandarin;
+
+  &:hover {
+    background-color: darken(variables.$mandarin, 5%);
+  }
+}
+
+.btn-mint {
+  @extend .btn;
+  background-color: variables.$mint;
+
+  &:hover {
+    background-color: darken(variables.$mint, 5%);
+  }
+}
+
+.btn-blue {
+  @extend .btn;
+  background-color: variables.$blue;
+
+  &:hover {
+    background-color: darken(variables.$blue, 5%);
+  }
+}

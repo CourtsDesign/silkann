@@ -1,0 +1,37 @@
+@use 'bootstrap/scss/bootstrap' as *;
+@use '../global/variables';
+
+.section {
+  padding: 4rem 1rem;
+  position: relative;
+
+  @include media-breakpoint-up(lg) {
+    padding: 6rem 2rem;
+  }
+
+  .angle-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25%;
+    z-index: 1;
+
+    &.left {
+      right: auto;
+      left: 0;
+    }
+  }
+
+  .angle-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 25%;
+    z-index: 3;
+
+    &.left {
+      right: auto;
+      left: 0;
+    }
+  }
+}

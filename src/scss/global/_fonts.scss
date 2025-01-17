@@ -1,0 +1,53 @@
+@use 'bootstrap/scss/bootstrap' as *;
+@use '../global/variables';
+
+.font-300 {
+  font-family: 'museo-sans', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.font-700 {
+  font-family: 'museo-sans', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  @extend .font-300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @extend .font-300;
+
+  @include media-breakpoint-down(md) {
+    br {
+      display: none;
+    }
+  }
+}
+
+strong {
+  @extend .font-700;
+}
+
+a {
+  color: black;
+}
+
+.cta-text {
+  font-size: 1rem;
+
+  @include media-breakpoint-up(md) {
+    font-size: 1.2rem;
+  }
+}

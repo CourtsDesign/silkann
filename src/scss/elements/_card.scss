@@ -1,0 +1,66 @@
+@use 'bootstrap/scss/bootstrap' as *;
+@use '../global/variables';
+
+.card {
+  border: none;
+
+  figure {
+    position: relative;
+    margin: 0;
+    border-radius: 1rem 1rem 0 0;
+    overflow: hidden;
+
+    .card-img-icon {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background: white;
+      padding: 1rem 2rem 1rem 1.5rem;
+      border-radius: 0 2rem 2rem 0;
+    }
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .card-body {
+    padding: 1.5rem;
+    border: 1px solid black;
+    border-top: none;
+    border-radius: 0 0 1rem 1rem;
+
+    @include media-breakpoint-up(lg) {
+      padding: 2rem;
+    }
+
+    .card-title {
+      font-weight: bold;
+    }
+  }
+
+  &.periwinkle {
+    .card-body {
+      border-color: variables.$periwinkle;
+    }
+  }
+
+  &.mint {
+    .card-body {
+      border-color: variables.$mint;
+    }
+  }
+
+  &.blush {
+    .card-body {
+      border-color: variables.$blush;
+    }
+  }
+
+  &.lemon {
+    .card-body {
+      border-color: variables.$lemon;
+    }
+  }
+}
