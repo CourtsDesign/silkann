@@ -1,11 +1,18 @@
 @use 'bootstrap/scss/bootstrap' as *;
 @use '../global/variables';
 
-header {
+.header {
+  padding: 1rem 1rem;
+  transition: all 0.3s ease-in-out;
+
+  @include media-breakpoint-up(lg) {
+    padding: 3rem 1rem;
+  }
+
   .logo {
     width: 150px;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       width: 200px;
     }
   }
@@ -21,7 +28,7 @@ header {
 
   .navbar-nav {
     gap: 1rem;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       background-color: variables.$blush;
       margin-top: 1rem;
       border-radius: 6px;
@@ -32,8 +39,17 @@ header {
   }
 
   .btn {
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       width: 100%;
     }
+  }
+
+  &.scrolled {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    z-index: 9000;
+    position: sticky;
+    top: 0;
+    padding: 1rem;
   }
 }

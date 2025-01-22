@@ -8,10 +8,10 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="px-3 py-3 py-lg-5 px-lg-4">
-      <div class="container mx-auto">
-        <div class="navbar navbar-expand-md d-md-flex justify-content-md-between">
-          <a href="/">
+    <header class="header">
+      <div class="container p-0 mx-auto">
+        <div class="navbar navbar-expand-lg d-md-flex justify-content-md-between">
+          <a href="index.html">
             <img class="logo" src="assets/images/silkann.svg" alt="Logo" width="200" height="36" />
           </a>
           <button
@@ -25,19 +25,29 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse flex-md-grow-0" id="navbarTogglerDemo02">
-            <ul class="mb-2 navbar-nav me-auto mb-md-0">
+          <div class="collapse navbar-collapse flex-lg-grow-0" id="navbarTogglerDemo02">
+            <ul class="mb-2 navbar-nav me-auto mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="news.html">News</a>
+              </li>
+              <li>
+                <a
+                  class="nav-link"
+                  href="https://sterimedix.com/aesthetic-products/"
+                  target="_blank"
+                  >Product Catalogue</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="resources.html">Resources</a>
               </li>
             </ul>
-            <a class="btn btn-periwinkle rounded-pill ms-md-3" href="contact.html" role="button">Contact</a>
+            <a class="btn btn-periwinkle rounded-pill ms-lg-3" href="contact.html" role="button"
+              >Contact</a
+            >
           </div>
         </div>
       </div>
@@ -55,9 +65,10 @@
             <p class="lead">
               Get in touch proident aute ut consequat sunt est nostrud dolor consectetur magna quis.
             </p>
+            <img src="assets/images/silkann-hero.png" alt="silkann" class="mt-3 w-75" />
           </div>
           <div class="col-md-6">
-            <img src="assets/images/banner_1.png" alt="Banner" class="img-fluid person" />
+            <img src="assets/images/banner_1.webp" alt="Banner" class="img-fluid person" />
           </div>
         </div>
       </div>
@@ -79,8 +90,25 @@
     <!-- CANNULAS -->
     <section class="bg-white section">
       <div class="mx-auto container-lg">
-        <div class="d-md-flex justify-content-md-between align-items-center">
-          <div class="col-md-4">
+        <div
+          class="row gy-5 gy-lg-0 gx-md-5 flex-wrap justify-content-md-between align-items-center"
+        >
+          <div class="col-sm-12 col-lg-6">
+            <h2><strong>We’d love</strong> to hear from you</h2>
+            <p class="my-4 lead">
+              For more info call: <strong>+44 (0)1527 501480</strong><br />
+              or email: <a href="mailto:sales@sterimedix.com">sales@sterimedix.com</a>
+            </p>
+            <p class="mb-5">
+              26 Thornhill Road,<br />
+              North Moons Moat,<br />
+              Redditch,<br />
+              Worcestershire,<br />
+              B98 9ND, UK
+            </p>
+            <a class="btn btn-periwinkle rounded-pill" href="#" role="button">Map / Directions</a>
+          </div>
+          <div class="col-lg-3 col-sm-6">
             <div class="card lemon">
               <figure>
                 <div class="card-img-icon">
@@ -89,7 +117,30 @@
                 <img src="assets/images/brochure-thumb.svg" class="card-img-top" alt="Brochure" />
               </figure>
               <div class="card-body">
-                <h3 class="card-title">Brochure</h3>
+                <h3 class="card-title">Product Catalogue</h3>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
+                </p>
+                <a
+                  href="https://sterimedix.com/aesthetic-products/"
+                  target="_blank"
+                  class="btn btn-lemon rounded-pill"
+                  >View catalogue</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="card lemon">
+              <figure>
+                <div class="card-img-icon">
+                  <img src="assets/images/brochure-icon.svg" alt="News icon" />
+                </div>
+                <img src="assets/images/brochure-thumb.svg" class="card-img-top" alt="Brochure" />
+              </figure>
+              <div class="card-body">
+                <h3 class="card-title">Silkann Brochure</h3>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up the bulk of the
                   card's content.
@@ -98,18 +149,6 @@
               </div>
             </div>
           </div>
-          <div class="mt-5 mt-md-0 col-lg-6 col-md-7">
-            <h2>
-              <strong>We’d love</strong> to hear from you
-            </h2>
-            <p class="my-4 lead">
-              For more info call: <strong>+44 (0)1527 501480</strong><br/> or email: <a href="mailto:sales@sterimedix.com">sales@sterimedix.com</a>
-            </p>
-            <p class="mb-5">
-              26 Thornhill Road,<br/> North Moons Moat,<br/> Redditch,<br/> Worcestershire,<br/> B98 9ND, UK
-            </p>
-            <a class="btn btn-periwinkle rounded-pill" href="#" role="button">Map / Directions</a>
-          </div> 
         </div>
       </div>
     </section>
@@ -119,19 +158,11 @@
       <div class="container p-0 mx-auto">
         <div class="row d-flex align-items-center justify-content-between">
           <div class="mb-5 col-md-6 col-lg-5">
-            <p class="mb-4 lead">
-              <strong>Contact us</strong> today
-            </p>
+            <p class="mb-4 lead"><strong>Contact us</strong> today</p>
             <div class="box white">
               <form>
                 <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    placeholder="Name"
-                    required
-                  />
+                  <input type="text" class="form-control" id="name" placeholder="Name" required />
                 </div>
                 <div class="mb-3">
                   <input
@@ -155,26 +186,21 @@
                 <div class="mb-3 form-check">
                   <input class="form-check-input" type="checkbox" value="" id="gdpr" required />
                   <label class="form-check label" for="gdpr">
-                    GDPR, marketing communications</a>
+                    GDPR, marketing communications
                   </label>
                 </div>
-                
+
                 <button type="submit" class="btn btn-rose rounded-pill">Submit</button>
               </form>
             </div>
           </div>
           <div class="col-md-6 align-self-end">
-            <img src="assets/images/banner_3.png" alt="Banner" class="img-fluid person" />
+            <img src="assets/images/banner_3.webp" alt="Banner" class="img-fluid person" />
           </div>
         </div>
       </div>
       <img class="fingerprint" src="assets/images/print-rose.svg" alt="Banner" class="img-fluid" />
-      <img
-        class="angle-top"
-        src="assets/images/angle-top.svg"
-        alt="angle"
-        class="img-fluid"
-      />
+      <img class="angle-top" src="assets/images/angle-top.svg" alt="angle" class="img-fluid" />
       <img
         class="angle-bottom"
         src="assets/images/angle-bottom.svg"
@@ -186,11 +212,19 @@
     <footer class="px-3 py-4 py-md-5 px-lg-4">
       <div class="container mx-auto">
         <div class="d-lg-flex justify-content-md-between align-items-center">
-          <a href="/">
-            <img class="mb-3 mb-lg-0 logo" src="assets/images/silkann.svg" alt="Logo" width="200" height="36" />
+          <a href="index.html">
+            <img
+              class="mb-3 mb-lg-0 logo"
+              src="assets/images/silkann.svg"
+              alt="Logo"
+              width="200"
+              height="36"
+            />
           </a>
-          <p class="mb-0 text-start text-lg-end">Copyright Silkann 2024  | <a href="#">Legal</a><br/>26 Thornhill Road, North Moons Moat, Redditch, Worcestershire, B98 9ND, UK</p>
-          </div>
+          <p class="mb-0 text-start text-lg-end">
+            Copyright Silkann 2024 | <a href="#">Legal</a><br />26 Thornhill Road, North Moons Moat,
+            Redditch, Worcestershire, B98 9ND, UK
+          </p>
         </div>
       </div>
     </footer>

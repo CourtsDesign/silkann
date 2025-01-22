@@ -40,11 +40,8 @@
         border-radius: 20px;
         transition-duration: 0.4s;
         transition-timing-function: ease-in-out;
-        border: 4px solid transparent;
-
-        &:hover {
-          border-color: variables.$mint;
-        }
+        border: 4px solid variables.$mint;
+        pointer-events: none !important;
 
         &.silkann-tip {
           left: 18%;
@@ -71,5 +68,13 @@
         width: 100%;
       }
     }
+  }
+}
+
+.tooltip-inner {
+  font-size: 0.9rem !important;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 1.2rem !important;
   }
 }

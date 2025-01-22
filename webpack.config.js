@@ -7,6 +7,10 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const sass = require('sass');
 const webpack = require('webpack');
 const miniCssExtractPlugin = require('mini-css-extract-plugin');
+const fs = require('fs');
+const htmlFiles = fs
+  .readdirSync(path.resolve(__dirname, 'src'))
+  .filter((file) => file.endsWith('.html'));
 
 module.exports = {
   mode: 'development',
@@ -20,25 +24,22 @@ module.exports = {
     static: path.resolve(__dirname, 'dist'),
     port: 8080,
     hot: true,
-    watchFiles: [
-      'src/**/*',
-      'src/index.html',
-      'src/contact.html',
-      'src/news.html',
-      'src/resources.html',
-    ], // Watch all files in the src directory, index.html, and contact.html
+    watchFiles: ['src/**/*', 'src/**/*.html'],
   },
-  plugins: [
-    new HtmlWebpackPlugin({ template: './src/index.html' }),
-    new HtmlWebpackPlugin({ template: './src/contact.html', filename: 'contact.html' }),
-    new HtmlWebpackPlugin({ template: './src/news.html', filename: 'news.html' }),
-    new HtmlWebpackPlugin({ template: './src/resources.html', filename: 'resources.html' }),
+  plugins: [].concat(
+    htmlFiles.map(
+      (file) =>
+        new HtmlWebpackPlugin({
+          template: `./src/${file}`,
+          filename: file,
+        }),
+    ),
     new miniCssExtractPlugin(),
     new CopyWebpackPlugin({
       patterns: [{ from: 'src/assets', to: 'assets' }],
     }),
     new webpack.HotModuleReplacementPlugin(), // Enable HMR
-  ],
+  ),
   module: {
     rules: [
       {
